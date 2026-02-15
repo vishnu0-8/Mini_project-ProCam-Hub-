@@ -1,0 +1,111 @@
+/* usually we set by default margin and padding to zero */
+*{
+    margin: 0px;
+    padding: 0px;
+   font-family: poppins; 
+}
+/* next we set photo for aur background */
+.main_box{
+    background: url(360_F_548602980_ETiKg07VB1X2vgXvT7mRkN914jNMRH6B.jpg);
+    /* to set height to whole visible page we use height: 100vh; */
+    height: 100vh;
+    
+}
+.btn_one i{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 16px;
+    font-weight:700;
+    line-height: 60px;
+    transition: 0.5s;
+}
+/* now we style for slide bar menu  */
+ .sidebar_menu{
+    /* to hide it from the screen we set its position -left mean area which is not seen on screen  */
+    position: fixed;
+    left: -350px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255,0.1);
+    box-shadow: 0 0 6px rgba(255, 255,255,0.5);
+ }
+ /* now we style the individual element of sidebarmenu  */
+ .sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 2px 4px rgba(255, 255,255,0.5);
+    height: 60px;
+ }
+ /* style will be apply only on a tag which is inside logo  */
+ .sidebar_menu .logo a{
+    position: absolute;
+    left: 50px;
+    font-size:20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+ }
+
+ .sidebar_menu .btn_two{
+   position: absolute;
+   left: 250px;
+   line-height: 60px;
+   color: grey;
+   font-size: 25px;
+   font-weight: 700;
+   /* opacity: 0; */
+ }
+ .sidebar_menu .menu{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    color: white;
+ }
+ .sidebar_menu .menu li{
+   transition: 0.3s;
+ }
+ .sidebar_menu .menu li{
+   margin-top: 6px;
+   padding: 14px 20px;
+ }
+ .sidebar_menu .menu li i,a{
+   color: white;
+   text-decoration: none;
+   font-size: 20px;
+ }
+ .sidebar_menu .menu li i{
+   padding-right:10px;
+ }
+ .sidebar_menu .social_media{
+   position: absolute;
+   left: 25%;
+   bottom: 50px;
+ }
+ .sidebar_menu .social_media i{
+   color: white;
+   opacity: 0.5;
+   padding:5px;
+   transition: 0.2s;
+ }
+ #check{
+   display: none;
+ }
+ .sidebar_menu .menu li:hover{
+   box-shadow: 0 0 4px rgba(255, 255,255,0.5);
+ }
+.sidebar_menu .social_media i:hover{
+   box-shadow: 0 0 1px rgba(255, 255,255,0.5);
+   opacity:1;
+   transform: scale(1.2);
+}
+.btn_one :hover{
+   font-size: 40px;
+}
+.btn_two:hover{
+   font-size: 36px;
+}
+#check:checked ~ .sidebar_menu{
+   left: 0px;
+}
